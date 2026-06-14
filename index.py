@@ -97,10 +97,10 @@
 # print(greet("afzal"))
 
 
-def multiply(a,b,c):
-  return a*b*c
+# def multiply(a,b,c):
+#   return a*b*c
 
-print(multiply(2,3,4))
+# print(multiply(2,3,4))
 
 
 #write a function that takes a list of numbers and returns only the even ones
@@ -122,8 +122,61 @@ print(multiply(2,3,4))
 #       even_nums.append(num)
 #   return even_nums
   
+# s = "python"
+
+# #reverse the string without built-in functions
+# reverse_string = ""
+
+# for i in range(len(s)-1,-1,-1):
+#   reverse_string += s[i]
+
+# print(reverse_string)
+
+#write a function that takes a string and returns the reversed string
+# def reverse_string(s):
+#   reversed_string = ""
+#   for i in range(len(s)-1,-1,-1):
+#     reversed_string += s[i]
+#   return reversed_string
 
 
-nums = [1,2,3,4,5,6,7,8,9,10]
 
-even_nums = [num for num in nums if num % 2 == 0]
+
+
+
+# def function1(num):
+#   if(num%2==0):
+#     return "even"
+#   else:
+#     return "odd"
+
+# print(function1(2))
+
+
+# people = [
+#     {"name": "Alice", "age": 25},
+#     {"name": "Bob", "age": 30},
+#     {"name": "Charlie", "age": 35}
+# ]
+
+
+# for person in people:
+#   print(person["name"], "is", person["age"], "years old")
+
+
+#   5. Dictionary operations
+# python# Given this dictionary, find and print the key with the highest value
+
+best_name = None
+best_score = -1
+scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
+
+
+for name,score in scores.items():
+   if score > best_score:
+      best_name = name
+      best_score = score
+    
+print(best_name, best_score)
+
+# print(max_key)
