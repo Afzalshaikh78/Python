@@ -167,16 +167,105 @@
 #   5. Dictionary operations
 # python# Given this dictionary, find and print the key with the highest value
 
-best_name = None
-best_score = -1
-scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
+# best_name = None
+# best_score = -1
+# scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
 
 
-for name,score in scores.items():
-   if score > best_score:
-      best_name = name
-      best_score = score
+# for name,score in scores.items():
+#    if score > best_score:
+#       best_name = name
+#       best_score = score
     
-print(best_name, best_score)
+# print(best_name, best_score)
 
-# print(max_key)
+# # print(max_key)
+
+# class Car:
+#    def __init__(self,brand,year):
+#       self.brand = brand
+#       self.year = year
+
+#    def describe(self):
+#       print(f"This {self.brand} car was made in {self.year}")
+
+
+# my_car = Car("Toyota",2020)
+# my_car.describe()
+
+
+# def function1(sentence):
+#    word = sentence.split()
+#    return len(word)
+
+
+# # print(function1("Hello World"))
+
+
+# nums = [1,2,3,4,5,6,7,8,9,10]
+
+
+# odd = [x for x in nums if x%2!=0]
+# print(odd)
+
+# labels = ["even" if x % 2 == 0 else "odd" for x in nums]
+# print(labels)
+
+# squares = {x:x**2 for x in range(1,6)}
+# print(squares)
+
+
+# words = ["python", "ai", "developer"]
+
+# word_map = {word:len(word) for word in words}
+# print(word_map)
+
+
+# try:
+#     num = int(input("Enter a number: "))
+#     result = 10 / num
+# except ValueError:
+#     print("That's not a valid number")
+# except ZeroDivisionError:
+#     print("Can't divide by zero")
+# else:
+#     print(f"Result: {result}")   # runs if no exception
+# finally:
+#     print("Done")  
+
+
+# try:
+#    num = int(input("enter a num: "))
+#    result = 10 * num
+# except ValueError:
+#    print("That's not a valid number")
+# else:
+#    print(f"Result: {result}")
+
+# f = open("data.txt","r")
+# content = f.read()
+# f.close()
+
+
+# with open("data.txt","r") as f:
+#     content = f.read()
+# #     print(content)
+# with open("data.txt", "r") as f:
+#     for line in f:            # iterate line by line (memory efficient)
+#         print(line.strip())
+
+
+
+# with open("output.txt", "w") as f:
+#     f.write("Hello\n")
+#     f.write("World\n")
+
+# with open("output.txt", "a") as f:
+#     f.write("New line\n")
+
+
+try:
+    with open("missing.txt", "r") as f:
+        content = f.read()
+except FileNotFoundError:
+    print("File does not exist")
