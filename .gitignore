@@ -1,0 +1,3 @@
+echo "similarity.pkl" >> .gitignore
+# or add *.pkl to ignore all pickle files
+echo "*.pkl" >> .gitignore
